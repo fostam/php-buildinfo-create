@@ -1,15 +1,15 @@
 <?php
 
-namespace BuildInfo\FileCreator;
+namespace Fostam\BuildInfo\FileCreator;
 
-use BuildInfo\BuildInfo;
+use Fostam\BuildInfo\BuildInfo;
 use Exception;
 
 class JSON implements FileCreator {
     /**
      * @param string $filename
      * @param BuildInfo $buildInfo
-     * @throws \Exception
+     * @throws Exception
      */
     public function create(string $filename, BuildInfo $buildInfo): void {
         $contents = json_encode($buildInfo->getRawData());

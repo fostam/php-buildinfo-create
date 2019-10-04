@@ -23,7 +23,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "BuildInfo\\": "src/lib"
+      "Fostam\\BuildInfo\\": "src/lib"
     }
   }
 }

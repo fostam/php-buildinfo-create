@@ -3,6 +3,7 @@
 $autoload = false;
 foreach([__DIR__ . '/../../../../vendor/autoload.php', __DIR__ . '/../vendor/autoload.php'] as $autoloadFile) {
     if (file_exists($autoloadFile)) {
+        /** @noinspection PhpIncludeInspection */
         require_once $autoloadFile;
         $autoload = true;
         break;
@@ -14,7 +15,7 @@ if ($autoload !== true) {
     exit(1);
 }
 
-use BuildInfo\Command\Create;
+use Fostam\BuildInfo\Command\Create;
 use Symfony\Component\Console\Application;
 
 $application = new Application();

@@ -1,8 +1,8 @@
 <?php
 
-namespace BuildInfo\FileCreator;
+namespace Fostam\BuildInfo\FileCreator;
 
-use BuildInfo\BuildInfo;
+use Fostam\BuildInfo\BuildInfo;
 
 interface FileCreator {
     public function create(string $filename, BuildInfo $buildInfo): void;

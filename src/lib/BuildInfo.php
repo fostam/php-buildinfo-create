@@ -1,6 +1,6 @@
 <?php
 
-namespace BuildInfo;
+namespace Fostam\BuildInfo;
 
 use DateTime;
 use Exception;
