@@ -1,7 +1,8 @@
 {
   "name": "fostam/buildinfo",
   "license": "Apache-2.0",
-  "type": "project",
+  "type": "library",
+  "description": "Store and use build time information. Useful for automated builds where information like the application version needs to be retrieved at build time, e.g. from a Git tag.",
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
