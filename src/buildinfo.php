@@ -15,7 +15,7 @@ if ($autoload !== true) {
     exit(1);
 }
 
-use Fostam\BuildInfo\Command\Create;
+use Fostam\BuildInfoCreate\Command\Create;
 use Symfony\Component\Console\Application;
 
 $application = new Application();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fostam\BuildInfo\FileCreator;
+namespace Fostam\BuildInfoCreate\FileCreator;
 
 use Fostam\BuildInfo\BuildInfo;
 use Exception;

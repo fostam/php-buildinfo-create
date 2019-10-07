@@ -1,14 +1,14 @@
 <?php
 
-namespace Fostam\BuildInfo\Command;
+namespace Fostam\BuildInfoCreate\Command;
 
 use DateTime;
 use DateTimeZone;
 use Exception;
 use Fostam\BuildInfo\BuildInfo;
-use Fostam\BuildInfo\FileCreator\FileCreator;
-use Fostam\BuildInfo\FileCreator\JSON;
-use Fostam\BuildInfo\FileCreator\PHP;
+use Fostam\BuildInfoCreate\FileCreator\FileCreator;
+use Fostam\BuildInfoCreate\FileCreator\JSON;
+use Fostam\BuildInfoCreate\FileCreator\PHP;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputDefinition;

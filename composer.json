@@ -1,12 +1,13 @@
 {
-  "name": "fostam/buildinfo",
+  "name": "fostam/buildinfo-create",
   "license": "Apache-2.0",
   "type": "library",
   "description": "Store and use build time information. Useful for automated builds where information like the application version needs to be retrieved at build time, e.g. from a Git tag.",
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
-    "symfony/console": "^4.2"
+    "symfony/console": "^4.2",
+    "fostam/buildinfo": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "8.1.*"
@@ -23,7 +24,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "Fostam\\BuildInfo\\": "src/lib"
+      "Fostam\\BuildInfoCreate\\": "src/lib"
     }
   }
 }
