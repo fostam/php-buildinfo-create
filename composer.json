@@ -6,11 +6,11 @@
   "require": {
     "php": ">=7.2",
     "ext-json": "*",
-    "symfony/console": "^4.2",
+    "symfony/console": "^5.0",
     "fostam/buildinfo": "^1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "8.1.*"
+    "phpunit/phpunit": "8.5.*"
   },
   "bin": [
     "bin/buildinfo"

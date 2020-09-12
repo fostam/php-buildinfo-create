@@ -45,9 +45,10 @@ class Create extends Command {
     /**
      * @param InputInterface $input
      * @param OutputInterface $output
+     * @return int
      * @throws Exception
      */
-    protected function execute(InputInterface $input, OutputInterface $output): void {
+    protected function execute(InputInterface $input, OutputInterface $output): int {
         $buildInfoData = [];
         $buildInfoData[BuildInfo::NAME] = $input->getOption('set-name');
         $buildInfoData[BuildInfo::TIME] = $input->getOption('set-time');
@@ -75,6 +76,8 @@ class Create extends Command {
         foreach($input->getArgument('target') as $target) {
             $this->buildTarget($target, $buildInfo);
         }
+
+        return Command::SUCCESS;
     }
 
     /**
